@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey form</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title" class="title">Company Survey Form</h1>
+                <p id="description" class="subtitle">
+                    Please take a minute to help us improve our services
+                </p>
+            </header>
+            <form id="survey-form" class="form" autocomplete="off">
+                <div class="name-group">
+                    <div class="form-group left">
+                        <label id="name-label">
+                            <p class="form-group__label">First name</p>
+                            <input
+                                id="name"
+                                class="form-group__input"
+                                type="text"
+                                placeholder="Enter your first name"
+                                required
+                                autofocus
+                            />
+                        </label>
+                    </div>
+                    <div class="form-group right">
+                        <label>
+                            <p class="form-group__label">Last name</p>
+                            <input
+                                class="form-group__input"
+                                type="text"
+                                placeholder="Enter your last name"
+                                required
+                            />
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="email-label">
+                        <p class="form-group__label">Email</p>
+                        <input
+                            id="email"
+                            class="form-group__input"
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label id="number-label">
+                        <p class="form-group__label">Age (optional)</p>
+                        <input
+                            id="number"
+                            class="form-group__input"
+                            type="number"
+                            placeholder="age"
+                            min="1"
+                            max="140"
+                        />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <p class="form-group__label">Gender</p>
+
+                        <select
+                            id="dropdown"
+                            class="form-group__input"
+                            name="big"
+                        >
+                            <option value="" disabled selected hidden>
+                                Select an option
+                            </option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="non-binary">Non-binary</option>
+                            <option value="transgender">Transgender</option>
+                            <option value="intersex">Intersex</option>
+                            <option value="none">I prefer not to say</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p class="form-group__label">
+                        How would you rate our service?
+                    </p>
+
+                    <label class="radio">
+                        <input
+                            class="radio__input"
+                            type="radio"
+                            name="service_rating"
+                            value="excellent"
+                            required
+                            checked
+                        />
+                        <p class="radio__label">Excellent</p>
+                    </label>
+
+                    <label class="radio">
+                        <input
+                            class="radio__input"
+                            type="radio"
+                            name="service_rating"
+                            value="good"
+                            required
+                        />
+                        <p class="radio__label">Good</p>
+                    </label>
+
+                    <label class="radio">
+                        <input
+                            class="radio__input"
+                            type="radio"
+                            name="service_rating"
+                            value="average"
+                            required
+                        />
+                        <p class="radio__label">Average</p>
+                    </label>
+
+                    <label class="radio">
+                        <input
+                            class="radio__input"
+                            type="radio"
+                            name="service_rating"
+                            value="poor"
+                            required
+                        />
+                        <p class="radio__label">Poor</p>
+                    </label>
+
+                    <label class="radio">
+                        <input
+                            class="radio__input"
+                            type="radio"
+                            name="service_rating"
+                            value="very-poor"
+                            required
+                        />
+                        <p class="radio__label">Very Poor</p>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p class="form-group__label">
+                        Please select the area’s you think we could improve
+                    </p>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="customer_care"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Customer care</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="sales"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Sales</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="product_quality"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Product quality</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="product_range"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Product range</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="product_pricing"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Product Pricing</p>
+                    </label>
+
+                    <label class="checkbox">
+                        <input
+                            class="checkbox__input"
+                            type="checkbox"
+                            name="improvement_areas"
+                            value="delivery_times"
+                        />
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__label">Delivery lead times</p>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <p class="form-group__label">
+                            Any comments or suggestions?
+                        </p>
+
+                        <textarea
+                            class="form-group__input"
+                            name="comments"
+                            placeholder="Enter your comment here..."
+                            rows="4"
+                            cols="50"
+                        ></textarea>
+                    </label>
+                </div>
+
+                <button id="submit" class="btn" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </body>
+</html>
